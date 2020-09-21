@@ -26,5 +26,15 @@ class CashRegister
     return "After the discount, the total comes to $#{@total}."
   end
 
+  def items
+     item_names = []
+     @cart.each do | item_info |
+     for qty in 1..item_info[:quantity] 
+      item_names << item_info[:name]
+     end 
+  end 
+   item_names
+   end 
+
 
 end
