@@ -10,6 +10,7 @@ class CashRegister
 
   def add_item(item)
     item_info = {}
+    item_info[:name] = item
 
 
   end
