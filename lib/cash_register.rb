@@ -13,6 +13,9 @@ class CashRegister
     item_info[:name] = item
     item_info[:price] = price
     item_info[:quantity] = quantity
+
+    @cart << item_info
+    @total += price * quantity
   end
 
 end
